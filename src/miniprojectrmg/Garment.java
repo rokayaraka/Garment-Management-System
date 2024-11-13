@@ -1,14 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package miniprojectrmg;
 
-/**
- *
- * @author ROKAYA SULTANA RAKA
- */
+
 public class Garment {
-    
+   private String id;
+   public String name;
+   public String description;
+   public String size;
+   private double price;
+   public int stockQuantity;
+   
+   public Garment(String id,String name, String description, String size,double price,int stockquantity){
+       
+       this.id=id;
+       this.name=name;
+       this.description=description;
+       this.size=size;
+       this.price=price;
+       this.stockQuantity=stockquantity;
+       
+   }
+   public void updateStock(int quantity){
+       
+       this.stockQuantity+=quantity;
+       
+   }
+   public double calculateDiscountPrice(double discountPercentage){
+       return price-(price*discountPercentage/100);
+       
+   }
+   
 }
