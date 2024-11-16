@@ -3,7 +3,7 @@ package miniprojectrmg;
 
 
 public class Garment {
-   private String id;
+   String id;
    public String name;
    public String description;
    public String size;

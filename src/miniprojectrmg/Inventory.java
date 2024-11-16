@@ -12,7 +12,7 @@ public class Inventory {
     }
     
     public void removeGarment(String id){
-        
+        garments.removeIf(garment -> garment.id.equals(id));
     }
     Garment findGarment(String id){
         for(Garment garment:garments){
